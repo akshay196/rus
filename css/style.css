@@ -1,0 +1,142 @@
+body{
+    background: url("../images/bg.png") repeat;
+    font-size: 87.5%;
+    font-family: ubuntu, sans-serif;
+    line-height: 1.7em;
+    text-align: left;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.main-header{
+    background: #dd4814;
+    width: 100%;
+    overflow: auto;
+    height: 50px;
+}
+
+.main-header #logo{
+    width: auto;
+    margin: 0 10px;
+    float: left;
+    height: 50px;
+    display: block;
+    transition: float 3s;
+}
+
+.main-header .main-nav ul{
+    margin: 0 auto;
+}
+.main-header .main-nav ul li{
+    color: #fff;
+    display: inline;
+    float: left;
+    border-left: 1px solid rgb(236, 91, 41);
+    padding:12px 20px;
+}
+
+.main-header .main-nav ul li:last-child {
+    border-right: 1px solid rgb(236, 91, 41);
+}
+
+.main-header .main-nav ul li:hover{
+    background: #e1662f;
+}
+
+.main-header .main-nav ul li a{
+    color: #fff;
+    display: inline-block;
+    font-size: 1.3em;
+    font-weight: lighter;
+}
+
+#main{
+    background: #fff;
+    width: 80%;
+    margin: 40px auto;
+    overflow: auto;
+    clear: both;
+    border-radius: 5px;
+    transition: width 1s;
+}
+
+#content-nav ul{
+    overflow: auto;
+    padding: 20px;
+}
+
+#content-nav ul li{
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 10px;
+    float: left;
+}
+
+#content-nav ul span{
+    display: inline-block;
+    margin-left: 10px;
+    float: left;
+}
+
+#content-nav ul li a{
+    color: #000;
+    font-size: 15px;
+}
+
+#content-nav ul li a:hover{
+    color: #dd4814;
+}
+
+
+#content article{
+    padding: 20px 20px;
+    border-top: 1px solid #dfdcd9;
+}
+
+.clr{
+    clear: both;
+}
+
+/*Tablet/ipads */
+@media only screen and (min-width: 768px) and (max-width: 960px){
+    #main{
+        width: 90%;
+    }
+}
+
+/*Smaller Tablet */
+@media only screen and (min-width: 569px) and (max-width: 767px){
+    #main{
+        width: 95%;
+    }
+    
+    .main-header .main-nav ul{
+        display: none;
+    }
+    
+    .main-header #logo{
+    margin: auto;
+    display: block;
+    float: none;
+    }
+}
+
+/*Smartphone*/
+@media only screen and (min-width: 240px) and (max-width: 568px){
+    #main{
+        width: 95%;
+    }
+    
+    .main-header .main-nav ul{
+        display: none;
+    }
+    
+    .main-header #logo{
+    margin: auto;
+    display: block;
+    float: none;
+    }
+}
